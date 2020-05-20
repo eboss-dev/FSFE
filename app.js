@@ -13,6 +13,6 @@ app.listen(8080, function () {
 app.get('/demo', (req, res) => {
   res.set('X-stack', 'you found the custom header');
   res.status(418);
-  res.sedn("Can't listen im getting some sleep");
+  res.send("Can't listen im getting some sleep");
 });
 
