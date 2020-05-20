@@ -10,9 +10,8 @@ app.listen(8080, function () {
   console.log('Example app listening on port 8080!');
 });
 
-app.get('/demo', (req, res) => {
+app.route('/demo', (req, res) => {
   res.set('X-stack', 'you found the custom header');
   res.status(418);
-  res.send("Can't listen im getting some sleep");
+  res.send('Cant listen im getting some sleep');
 });
-
